@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Rusu Radio Browser</title>
+ <!-- Assuming you're using a web font or have included the font file locally -->
+ <link href="https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap" rel="stylesheet">
+ <link href="path/to/70s-disco-personal-use.css" rel="stylesheet"> <!-- Update this path to your font's CSS file -->
+ <link href="https://fonts.googleapis.com/css?family=Material+Icons" rel="stylesheet">
+ <style>
+    #app {
+      font-family: '70\'s Disco Personal Use', 'Roboto Mono', monospace; /* Updated font */
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      text-align: center;
+      color: #fff; /* Changed to white for better contrast against the dark background */
+      background-color: #333; /* Dark background */
+    }
+
+    nav {
+      padding: 30px;
+      background-color: #444; /* Slightly lighter background for the nav */
+    }
+
+    nav a {
+      font-weight: bold;
+      color: #fff; /* Changed to white for better contrast against the dark background */
+    }
+
+    nav a.router-link-exact-active {
+      color: #42b983; /* Keeping the active link color as it is */
+    }
+ </style>
+</head>
+<body>
+ <div id="app">
+    <nav>
+      <router-link to="/">Home</router-link> |
+      <router-link to="/about">About</router-link> |
+      <router-link to="/contatti">Contatti</router-link>
+    </nav>
+    <router-view/>
+ </div>
+ <script src="/path/to/your/vue.js"></script>
+ <script src="/path/to/your/app.js"></script>
+</body>
+</html>
